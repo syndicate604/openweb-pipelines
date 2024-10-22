@@ -1,8 +1,8 @@
 """
 title: Anthropic Manifold Pipeline
-author: justinh-rahb, sriparashiva
-date: 2024-06-20
-version: 1.4
+author: justinh-rahb, sriparashiva, syndciate604
+date: 2024-10-22
+version: 1.5
 license: MIT
 description: A pipeline for generating text and processing images using the Anthropic API.
 requirements: requests, sseclient-py
@@ -45,8 +45,9 @@ class Pipeline:
         return [
             {"id": "claude-3-haiku-20240307", "name": "claude-3-haiku"},
             {"id": "claude-3-opus-20240229", "name": "claude-3-opus"},
-            {"id": "claude-3-sonnet-20240229", "name": "claude-3-sonnet"},
-            {"id": "claude-3-5-sonnet-20240620", "name": "claude-3.5-sonnet"},
+            {"id": "claude-3-sonnet-20240229", "name": "claude-3-sonnet-0229"},
+            {"id": "claude-3-5-sonnet-20240620", "name": "claude-3.5-sonnet-0620"},
+            {"id": "claude-3-5-sonnet-20241022", "name": "claude-3.5-sonnet-1022"},
         ]
 
     async def on_startup(self):
